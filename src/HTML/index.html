@@ -1,370 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arpak Worya Mohammed Qanee – BC Chess Champion</title>
-
-  <!-- Google Fonts: Playfair Display (display) + Inter (body) -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheet — lives at CSS/style.css -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="../../CSS/style.css" />
 </head>
 
 <body>
 
-  <!-- ================================================
-       NAV
-       ================================================ -->
+  <!-- NAV -->
   <nav>
     <div class="nav-inner">
-      <!-- LOGO: edit the name display here -->
-      <span class="nav-logo">Arpak <span>♟</span> Qanee</span>
+      <a href="index.html" class="nav-logo">Arpak <span>♟</span> Qanee</a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#style">Playing Style</a></li>
-        <li><a href="#testimonials">Praise</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="achievements.html">Achievements</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-cta">Contact</a>
+        </li>
       </ul>
     </div>
   </nav>
 
-  <!-- ================================================
-       HERO
-       ================================================ -->
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-inner">
       <div class="hero-content">
 
-        <!-- Badge — edit the text to update the title label -->
-        <div class="badge">4× BC Senior Chess Champion</div>
+        <div class="badge">5× BC Senior Chess Champion</div>
 
-        <!-- Main headline — edit name / tagline here -->
-        <h1>Arpak Worya<br/>Mohammed <span>Qanee</span></h1>
+        <!--name and tagline -->
+        <h1>Arpak Worya<br />Mohammed Qanee</h1>
 
-        <!-- TAGLINE: edit this short hook line -->
         <p class="hero-sub">
-          British Columbia's most decorated senior chess champion — a strategic mind
-          honed through decades of elite competition and an unwavering passion for
-          the game.
+          A five-time British Columbia Senior Chess Champion and one of the most
+          decorated competitive chess players in the province's history. Born in
+          Erbil in the Kurdistan region, Arpak has spent decades mastering the game at the highest level
+          of BC competition <b>and is now eager to share his knowledge and experience with the next generation of chess
+            enthusiasts.</b>
         </p>
 
-        <!-- Stats row — update numbers / labels as needed -->
-        <div class="hero-stats">
-          <div>
-            <div class="stat-num">4×</div>
-            <div class="stat-label">BC Champion</div>
-          </div>
-          <div>
-            <!-- REPLACE: update with actual number of years competing -->
-            <div class="stat-num">50</div>
-            <div class="stat-label">Years Playing</div>
-          </div>
-          <div>
-            <!-- REPLACE: update with Arpak's FIDE / CFC rating -->
-            <div class="stat-num">2205</div>
-            <div class="stat-label">Rating</div>
-          </div>
-        </div>
-
         <div class="hero-actions">
-          <!-- CTA buttons — href="#contact" scrolls to the contact section -->
           <a href="#contact" class="btn-primary">Get in Touch</a>
-          <a href="#achievements" class="btn-outline">View Achievements</a>
+          <a href="about.html" class="btn-outline">Learn More</a>
         </div>
 
       </div>
 
-      <!-- HERO PHOTO: replace src with Arpak's actual photo path
-           e.g. src="../../assets/arpak-hero.jpg" -->
+      <!-- REPLACE src with real photo: e.g. ../../resource/img/Arpak-FIDE.jpg -->
       <div class="hero-photo-wrap">
-        <img
-          class="hero-photo"
-          src="src/HTML/resource/img/Arpak-FIDE.jpg" 
-          alt="Arpak Worya Mohammed Qanee – BC Chess Champion"
-        />
+        <img class="hero-photo" src="resource/img/arpak-aura2.jpg"
+          alt="Arpak Worya Mohammed Qanee – BC Chess Champion" />
       </div>
     </div>
   </section>
 
-  <!-- ================================================
-       ABOUT
-       ================================================ -->
-  <section id="about">
-    <div class="section-inner">
-      <div class="about-grid">
+  <!-- QUICK STATS STRIP -->
+  <section class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num">5×</div>
+        <div class="stat-label">BC Senior Champion</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-divider"></div>
+      <div class="stat-item"> 
+        <div class="stat-num">2296</div>
+        <div class="stat-label">Peak Rating</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-num">CM</div>
+        <div class="stat-label">Candidate Master</div>
+      </div>
+    </div>
+  </section>
 
-        <!-- ABOUT PHOTO: replace src with a second photo of Arpak
-             e.g. src="../../assets/arpak-tournament.jpg" -->
-        <img
-          class="about-img"
-          src="src/HTML/resource/img/Arpak-champion.jpg"
-          alt="Arpak Qanee at a chess tournament"
-        />
+  <!-- SHORT BIO -->
+  <section class="bio">
+    <div class="bio-inner">
+      <div class="bio-text">
+        <p class="section-label">Who is Arpak?</p>
+        <h2 class="section-title">Champion. Competitor.<br />Chess Coach.</h2>
+        <div class="divider"></div>
 
-        <div class="about-text">
-          <p class="section-label">About Arpak</p>
-          <h2 class="section-title">A Champion<br/>Born at the Board</h2>
-          <div class="divider"></div>
+        <!-- EDIT: 2–3 short paragraphs. Keep it punchy — this is a summary, not a full story. -->
+        <p>
+          Arpak Worya Mohammed Qanee is a five-time BC Senior Chess Champion whose
+          competitive career has made him one of the most respected figures in British
+          Columbia's chess community. His results speak for themselves. Consistent
+          excellence at the highest level of provincial play over many years.
+        </p>
+        <p>
+          Arpak started playing chess at a young age, quickly demonstrating a natural talent for the game. Over the
+          years, he has won numerous tournaments and has been a fixture in the BC chess scene,
+          known for his strategic mindset, shockingly brilliant plays and competitive spirit.
+        </p>
+        <p>
+          Now, Arpak is a chess coach on top of being a BC senior champion who's eager to share his knowledge and experience with the next generation of chess enthusiasts.
+          Whether you're a beginner looking to learn the basics or an advanced player seeking to refine your skills,
+          <b>Arpak offers coaching and mentorship that can help you reach your full potential.</b>
+        </p>
 
-          <!-- PARAGRAPH 1: Background / origin story — edit this -->
-          <p>
-            Arpak Worya Mohammed Qanee discovered chess at a young age and quickly
-            demonstrated a rare natural talent for the game. Growing up with an
-            analytical mind and fierce competitive drive, he devoted himself to
-            mastering every facet of chess — from sharp tactical play to deep
-            positional understanding.
-          </p>
-
-          <!-- PARAGRAPH 2: Journey / rise through ranks — edit this -->
-          <p>
-            Over the years, Arpak has competed in tournaments across British Columbia
-            and beyond, steadily climbing the ranks to claim the provincial senior
-            championship not once, but four times. His consistency at the highest
-            level of BC chess speaks to his discipline and relentless preparation.
-          </p>
-
-          <!-- PARAGRAPH 3: Personal note / philosophy — edit this -->
-          <p>
-            Beyond the trophies, Arpak is passionate about growing the chess
-            community. Whether mentoring newcomers or sharing insights with
-            experienced players, he brings the same dedication to the board that
-            has defined his entire career.
-          </p>
-
-          <!-- ADD MORE PARAGRAPHS as needed — copy a <p> block above -->
+        <div class="bio-actions">
+          <a href="about.html" class="btn-primary">Full Story</a>
+          <a href="achievements.html" class="btn-ghost">See Achievements</a>
         </div>
-
       </div>
+
+      <!-- REPLACE src with a second photo, e.g. at a tournament -->
+      <img class="bio-img" src="resource/img/arpak-onboard.jpg" alt="Arpak Qanee at a chess tournament" />
     </div>
   </section>
 
-  <!-- ================================================
-       ACHIEVEMENTS
-       ================================================ -->
-  <section id="achievements">
-    <div class="section-inner">
-      <p class="section-label">Track Record</p>
-      <h2 class="section-title">Titles &amp; Achievements</h2>
-      <div class="divider"></div>
-      <p class="section-body">
-        A decorated career marked by consistent excellence at the provincial level
-        and beyond. Below is a selection of Arpak's major accomplishments —
-        <!-- EDIT: update this sentence with accurate context -->
-        each title earned through rigorous preparation and world-class play.
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <p class="section-label" style="color: var(--gold);">Get in Touch</p>
+      <h2 class="contact-title">Want to Reach Arpak?</h2>
+      <p class="contact-sub">
+        to book a session, inquire about coaching, or discuss pricing. Arpak is always happy to connect with fellow
+        chess enthusiasts.
       </p>
 
-      <div class="achievements-grid">
-
-        <!-- ACHIEVEMENT CARDS: edit icon / title / description for each.
-             Copy an entire .achievement-card block to add more. -->
-
-        <div class="achievement-card">
-          <div class="achievement-icon">🏆</div>
-          <h3>4× BC Senior Chess Champion</h3>
-          <!-- REPLACE: add the actual years Arpak won -->
-          <p>Provincial senior champion in [Year], [Year], [Year], and [Year] — the most successful run in recent BC chess history.</p>
-        </div>
-
-        <div class="achievement-card">
-          <div class="achievement-icon">♟</div>
-          <!-- REPLACE: add a real tournament title or remove this card -->
-          <h3>[Tournament Name]</h3>
-          <p>Placeholder — replace with a major open or invitational title. Include city, year, and result.</p>
-        </div>
-
-        <div class="achievement-card">
-          <div class="achievement-icon">🎖️</div>
-          <!-- REPLACE: another title / recognition -->
-          <h3>[Recognition or Rating Milestone]</h3>
-          <p>Placeholder — e.g. peak CFC or FIDE rating, a national qualifier result, or a notable performance against a titled player.</p>
-        </div>
-
-        <div class="achievement-card">
-          <div class="achievement-icon">🌐</div>
-          <!-- REPLACE: national or international appearance if applicable -->
-          <h3>[National / International Appearance]</h3>
-          <p>Placeholder — representing BC or Canada at a national championship or invitational event.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ================================================
-       PLAYING STYLE
-       ================================================ -->
-  <section id="style">
-    <div class="section-inner">
-      <p class="section-label">On the Board</p>
-      <h2 class="section-title">Playing Style &amp; Strengths</h2>
-      <div class="divider" style="background: var(--gold);"></div>
-
-      <div class="style-grid">
-        <div>
-          <p class="section-body" style="margin-bottom: 2rem;">
-            <!-- EDIT: describe Arpak's actual playing style and strengths -->
-            Arpak is known for a dynamic, attacking style built on deep opening
-            preparation and exceptional endgame technique. Opponents respect his
-            ability to shift between tactical complexity and patient positional
-            maneuvering depending on what the position demands.
-          </p>
-
-          <!-- STYLE TRAITS: edit or add bullet points here -->
-          <ul class="style-list">
-            <li>
-              <!-- REPLACE with a real strength -->
-              Sharp tactical vision — thrives in complex, double-edged positions
-            </li>
-            <li>
-              <!-- REPLACE with a real strength -->
-              Deep opening preparation across multiple systems as both White and Black
-            </li>
-            <li>
-              <!-- REPLACE with a real strength -->
-              Clinical endgame technique — converts small advantages with high accuracy
-            </li>
-            <li>
-              <!-- REPLACE with a real strength -->
-              Psychological resilience — consistently performs under pressure at decisive moments
-            </li>
-            <li>
-              <!-- ADD MORE traits by copying a <li> item above -->
-              [Add another key strength or notable playing characteristic here]
-            </li>
-          </ul>
-        </div>
-
-        <!-- STYLE PHOTO: replace src with an action shot of Arpak at the board
-             e.g. src="../../assets/arpak-action.jpg" -->
-        <img
-          class="style-img"
-          src="https://placehold.co/520x390/2D6A4F/C9A84C?text=Arpak+in+Action"
-          alt="Arpak Qanee playing chess"
-        />
-      </div>
-    </div>
-  </section>
-
-  <!-- ================================================
-       TESTIMONIALS / PRAISE
-       Remove this entire section if you don't have quotes yet.
-       ================================================ -->
-  <section id="testimonials">
-    <div class="section-inner">
-      <p class="section-label">What People Say</p>
-      <h2 class="section-title">Praise &amp; Recognition</h2>
-      <div class="divider"></div>
-
-      <div class="testimonials-grid">
-
-        <!-- TESTIMONIAL 1: replace quote, author name, and role -->
-        <div class="testimonial-card">
-          <p>
-            "Placeholder quote — replace this with a real testimonial from a coach,
-            tournament director, or fellow competitor who can speak to Arpak's
-            character and chess ability."
-          </p>
-          <div class="testimonial-author">[ Name ]</div>
-          <div class="testimonial-role">[ Title / Organization ]</div>
-        </div>
-
-        <!-- TESTIMONIAL 2 -->
-        <div class="testimonial-card">
-          <p>
-            "Placeholder quote — e.g. a quote from a BC Chess Federation official,
-            a national master who has played against Arpak, or a student he has coached."
-          </p>
-          <div class="testimonial-author">[ Name ]</div>
-          <div class="testimonial-role">[ Title / Organization ]</div>
-        </div>
-
-        <!-- TESTIMONIAL 3 -->
-        <div class="testimonial-card">
-          <p>
-            "Placeholder quote — add a third voice here. Could be a media mention,
-            a community leader, or anyone who can vouch for Arpak's impact on chess in BC."
-          </p>
-          <div class="testimonial-author">[ Name ]</div>
-          <div class="testimonial-role">[ Title / Organization ]</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ================================================
-       CONTACT
-       ================================================ -->
-  <section id="contact">
-    <div class="section-inner">
-      <div class="contact-wrap">
-
-        <div class="contact-info">
-          <p class="section-label">Get in Touch</p>
-          <h2>Ready to Connect<br/>with Arpak?</h2>
-          <div class="divider"></div>
-          <p>
-            Whether you're interested in a training session, a speaking engagement,
-            a tournament collaboration, or simply want to reach out — Arpak would
-            love to hear from you.
-            <!-- EDIT: tailor this paragraph to what Arpak is actually offering -->
-          </p>
-
-          <!-- EMAIL: replace both instances of your@email.com -->
-          <div class="contact-detail">
-            <div class="contact-detail-icon">✉️</div>
-            <div>
-              <strong>Email</strong><br/>
-              <a href="mailto:your@email.com">your@email.com</a>
+      <div class="contact-details">
+        <div class="contact-row">
+          <span class="contact-icon">✉️</span>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">arpakchess44@gmail.com</a>
             </div>
           </div>
-
-          <!-- PHONE: replace both instances of +10000000000 -->
-          <div class="contact-detail">
-            <div class="contact-detail-icon">📞</div>
+          <div class="contact-row">
+            <span class="contact-icon">📞</span>
             <div>
-              <strong>Phone</strong><br/>
-              <a href="tel:+10000000000">+1 (000) 000-0000</a>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">1+ 604 401 0772</div>
             </div>
           </div>
         </div>
-
-        <!-- Contact card -->
-        <div class="contact-card">
-          <h3>Let's Talk Chess</h3>
-          <p>Pick the easiest way to reach Arpak — he typically responds within 24 hours.</p>
-
-          <!-- EMAIL BUTTON: replace href email -->
-          <a href="mailto:your@email.com" class="contact-btn-email">
-            ✉️ &nbsp; Send an Email
-          </a>
-
-          <!-- PHONE BUTTON: replace href phone -->
-          <a href="tel:+10000000000" class="contact-btn-phone">
-            📞 &nbsp; Call Arpak
-          </a>
-
-          <!-- OPTIONAL: add social media links here -->
-        </div>
-
       </div>
-    </div>
   </section>
 
-  <!-- ================================================
-       FOOTER
-       ================================================ -->
+
+  <!-- FOOTER -->
   <footer>
-    <!-- EDIT: update year if needed -->
-    <p>© 2025 <strong>Arpak Worya Mohammed Qanee</strong>. All rights reserved.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.8rem;">4× BC Senior Chess Champion &nbsp;♟&nbsp; British Columbia, Canada</p>
+    <p style="margin-top:0.4rem;font-size:0.8rem;">5× BC Senior Chess Champion &nbsp;♟&nbsp; British Columbia, Canada
+    </p>
   </footer>
 
-  <!-- JS — lives at JS/chess-portfolio.js -->
-  <script src="../../JS/chess-portfolio.js"></script>
-
+  <script src="../../JS/portfolio.js"></script>
 </body>
+
 </html>

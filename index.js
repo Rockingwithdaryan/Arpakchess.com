@@ -10,34 +10,54 @@ const mimeTypes = {
   '.js':   'application/javascript',
   '.png':  'image/png',
   '.jpg':  'image/jpeg',
+  '.jpeg': 'image/jpeg',
   '.svg':  'image/svg+xml',
   '.ico':  'image/x-icon',
   '.json': 'application/json',
 };
 
 const server = http.createServer((req, res) => {
-  let requestedPath = req.url === '/' ? '/src/HTML/index.html' : req.url;
-  let filePath = path.join(__dirname, requestedPath);
+  // Decode %20 and other encoded characters in URLs
+  const decoded = decodeURIComponent(req.url);
 
-  const ext = path.extname(filePath);
+  // Default route → index.html
+  let requestedPath = decoded === '/' ? '/src/HTML/index.html' : decoded;
+
+  // List of locations to search for the file, in order
+  const candidates = [
+    path.join(__dirname, requestedPath),              // 1. project root
+    path.join(__dirname, 'src/HTML', requestedPath),  // 2. inside src/HTML
+  ];
+
+  const ext = path.extname(requestedPath).toLowerCase();
   const contentType = mimeTypes[ext] || 'text/plain';
 
-  fs.readFile(filePath, (err, data) => {
-    if (err) {
-      console.log('404 -', filePath);
+  // Try each candidate path until one works
+  const tryNext = (index) => {
+    if (index >= candidates.length) {
+      console.log('404 -', requestedPath);
       res.writeHead(404);
       res.end('404 Not Found: ' + requestedPath);
       return;
     }
-    res.writeHead(200, { 'Content-Type': contentType });
-    res.end(data);
-  });
+
+    fs.readFile(candidates[index], (err, data) => {
+      if (err) {
+        tryNext(index + 1); // try the next location
+      } else {
+        res.writeHead(200, { 'Content-Type': contentType });
+        res.end(data);
+      }
+    });
+  };
+
+  tryNext(0);
 });
 
 server.listen(PORT, () => {
   console.log('');
-  console.log('   Arpak Chess server is running!');
+  console.log('   ♟  Arpak Chess server is running!');
   console.log('');
   console.log(`   http://localhost:${PORT}`);
-  console.log(''); 
+  console.log('');
 });
