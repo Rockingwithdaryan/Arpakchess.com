@@ -355,7 +355,7 @@ footer strong { color: var(--gold); }
   .bio-inner,
   .about-page-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero-photo-wrap { order: -1; max-width: 300px; margin: auto; }
-  .bio-img { max-width: 340px; margin: auto; }
+  .bio-img { display: none; }
   .about-page-img { position: static; max-width: 320px; margin: 0 auto; }
 
   /* Nav: swap horizontal links for a hamburger-driven dropdown */
