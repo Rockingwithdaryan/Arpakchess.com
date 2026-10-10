@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const fadeEls = document.querySelectorAll(
-    '.achievement-card, .testimonial-card, .about-grid, .contact-wrap'
+    '.achievement-card, .format-card, .audience-card, .fact-tile'
   );
 
   const fadeObserver = new IntersectionObserver(
