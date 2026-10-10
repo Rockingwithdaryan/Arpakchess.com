@@ -1,6 +1,10 @@
 {
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/:page(about|coaching|achievements).html", "destination": "/:page", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/", "destination": "/src/HTML/index.html" },
-    { "source": "/:page.html", "destination": "/src/HTML/:page.html" }
+    { "source": "/:page(about|coaching|achievements)", "destination": "/src/HTML/:page.html" }
   ]
 }

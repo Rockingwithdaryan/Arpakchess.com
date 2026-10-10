@@ -18,10 +18,11 @@ const mimeTypes = {
 
 const server = http.createServer((req, res) => {
   // Decode %20 and other encoded characters in URLs
-  const decoded = decodeURIComponent(req.url);
+  const decoded = decodeURIComponent(req.url.split('?')[0]);
 
-  // Default route → index.html
+  // Default route → index.html; clean URLs like /about → about.html (matches vercel.json)
   let requestedPath = decoded === '/' ? '/src/HTML/index.html' : decoded;
+  if (!path.extname(requestedPath)) requestedPath += '.html';
 
   // List of locations to search for the file, in order
   const candidates = [
